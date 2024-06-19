@@ -8,10 +8,10 @@
 
 ### Part 1: Tic, Tac, Toe in the terminal
 
-1. Fork and clone [Tic, Tac, Toe Repo](https://github.com/AustinCodingAcademy/JS211_TicTacToeProject.git)
-1. Ensure you have installed all dependencies/packages: `npm i`
-1. Open `main.js` and look at the Unit Test, see what is being called, passed as input arguments, and what the expected results are.
-1. Ensure you know how to run the unit test:
+Fork and clone [Tic, Tac, Toe Repo](https://github.com/AustinCodingAcademy/JS211_TicTacToeProject.git)
+Ensure you have installed all dependencies/packages: `npm i`
+Open `main.js` and look at the Unit Test, see what is being called, passed as input arguments, and what the expected results are.
+Ensure you know how to run the unit test:
     * `npm test main.js` + `ctrl + c` to escape.
 1. Use a whiteboard to work out a solution. HOW DOES TIC, TAC, TOE actually work in excruciating detail?
 1. Translate the broad ideas to pseudo code

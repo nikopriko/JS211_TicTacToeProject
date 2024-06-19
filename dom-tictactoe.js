@@ -15,10 +15,7 @@ let board = [
   ['','','']
 ];
 
-// is called when a square is clicked. "this" = element here
 const handleClick = (element) => {
-  // check to see if the square clicked has anything in it, if not continue
-  // this prevents an X being changed to an O
   if(!document.getElementById(element.id).innerHTML){
     addMarker(element.id)
     updateBoard(element.id)
@@ -28,16 +25,7 @@ const handleClick = (element) => {
 
 const addMarker = (id) => {
   console.log(`We'll place a mark on square: ${id}`)
-  // @TODO, Mix & Match. 
-  // You will need the following pieces:
-  
-  // = currentMarker
-  // .getElementById(id)
-  // document
-  // .innerHTML 
-  
-  // Arrange the above pieces into a single line of code
-  // to add an X or O to the board to the DOM so it can be scene on the screen.
+  document.getElementById(id).innerHTML = currentMarker;
 }
 
 // passes the element's id attribute from HTML to be used
@@ -48,6 +36,7 @@ const updateBoard = (id) => {
 
   console.log(`you clicked the sq at ${row} and ${column}`)
   console.log(board)
+
 
   // @TODO, Your code here: use the above information to change the board variable(array of arrays)
   // HINT: in your browser open up the dev tools -> console
@@ -70,7 +59,7 @@ const horizontalWin = () => {
 
 const verticalWin = () => {
   // @TODO, Your code here: to check for vertical wins
-}
+
 
 const diagonalWin = () => {
   // @TODO, Your code here: to check for diagonal wins
